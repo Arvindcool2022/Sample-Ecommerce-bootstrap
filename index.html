@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Athletaro</title>
+</head>
+<body>
+
+    <!-- navigation -->
+    <header class="fixed-top w-100">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-lg">
+                <a href="index.html" class="navbrand">
+                    <img class="img-fluid logo" src="favicon_io/favicon-32x32.png" alt="Athletaro logo"> Athletaro
+                </a>
+                <button class="navbar-toggler toggler--hover" type="button" data-bs-toggle="collapse" data-bs-target="#navigationContent" aria-controls="navigationContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </span>
+                </button>
+
+                <div class=" collapse navbar-collapse text-center justify-content-end" id="navigationContent">
+                    <ul class="navbar-nav gap-1">
+                        <li class="nav-item"><a href="index.html" class="nav-link active text-capitalize"><i class="bi bi-house-door"></i> home</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link text-capitalize"><i class="bi bi-amd"></i> products</a></li>
+                        <li class="nav-item"><a href="storelist.html" class="nav-link text-capitalize"><i class="bi bi-shop"></i> Find a store</a></li>
+                        <li class="nav-item"><a href="faq.html" class="nav-link text-capitalize"><i class="bi bi-info-circle"></i> FAQ </a></li>
+                        <div class="mb-3"></div>
+                        <li class="nav-item ms-lg-5">
+                            <button type="button" class="text-capitalize text-white-50 btn btn--sign-in btn-outline-secondary pb-md-2" data-bs-toggle="modal" data-bs-target="#log-in">
+                                <i class="bi bi-person"></i> sign in
+                            </button>
+                        </li>
+                        <div class="mb-2"></div>
+
+                        <li class="nav-item ms-lg-2">
+                            <button type="button" class="text-capitalize btn btn-outline-success pb-md-2"  data-bs-toggle="modal" data-bs-target="#join-us">
+                                <i class="bi bi-person-add"></i> join us
+                            </button>
+                        </li>
+                        <div class="mb-3"></div>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+       <!-- Modal -->
+   <div class="modal fade" id="log-in" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="log-in" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content text-bg-dark">
+        <div class="modal-body">
+            <h1 class="modal-title float-start" id="staticBackdropLabel">Log in</h1>
+            <button type="button" class="btn-close btn-close-white float-end mt-2" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="clearfix"></div>
+
+            <form action="\" method="post">
+
+                    <label for="email" class="form-label mt-3 ">Email</label>
+                    <div class="input-group">
+                        <i class="bi bi-envelope-at-fill input-group-text"></i>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com">
+                    </div>
+                   
+                    <label for="password" class="form-label mt-3 ">Password</label>
+                    <div class="input-group">
+                        <i class="bi bi-key-fill input-group-text "></i>
+                        <input type="password" name="password" id="password" class="form-control" placeholder="">
+                    </div>
+                
+            </form>
+            <a href="#" class="link-offset-1-hover link-opacity-75-hover">Forgot the password</a>
+
+            <button type="button" class="mx-auto mt-3 btn btn-success d-block w-100">Sign in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+       <!-- "Join us" Modal -->
+        <div class="modal fade" id="join-us" tabindex="-1" aria-labelledby="join-us" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content text-bg-danger">
+            <div class="modal-body">
+                <button type="button" class="btn-close btn-close-white float-end mt-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="display-1 text-capitalize"><i class="bi bi-tools pe-2"></i>Under construction</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- page content -->
+
+    <main>
+    <section class="section section--bg-image image-1">
+        <h1 class="section__title text-uppercase display-1 bg-black bg-opacity-75 text-md-center text-white-50 rounded-2 p-3 p-lg-5 container-sm">Where Greatness Begins</h1>
+    </section>
+    
+    <section class="bg-black ">
+        <p class="article-text container-md lead text-white-50 p-3 p-lg-5 mb-0">At Athletaro, our brand story is built upon a deep-rooted passion for empowering young athletes to conquer their athletic endeavors. We believe that every athlete deserves the right gear to unlock their full potential and achieve their wildest dreams. Our journey began with a group of sports enthusiasts who shared a common vision: to create athletic footwear that combines superior performance, style, and innovation, catering to the needs of today's ambitious athletes.</p>
+    </section>
+    
+    <section class="section section--bg-image image-3">
+        <figure class="bg-danger bg-opacity-75 w-100 text-black rounded-2 p-3 p-lg-5">
+            <blockquote class="section__quote display-5 fst-italic">
+                <p class="container-md">
+                    "At Athletaro, we inspire greatness and empower athletes to redefine their limits. It's not about being the best; it's about becoming your best self."</p>
+            </blockquote>
+            <figcaption class="display-6 text-danger-emphasis text-capitalize fst-italic container-md"> -Johnathon Masters, Founder of Athletaro.</figcaption>
+        </figure>
+    </section>
+    
+    
+    <section class="section section--bg-image image-2">
+    
+        <div class="section__body container-sm bg-white bg-opacity-75 rounded-2 p-3 p-lg-5">
+            <h1 class="section__title text-capitalize pb-2">Our mission.</h1>
+            <p class="section__text text-muted fst-italic">
+                Our mission is to inspire and equip athletes with the tools they need to push boundaries and surpass their limitations. We strive to revolutionize the athletic footwear industry by constantly pushing the boundaries of innovation. By collaborating with top athletes, sports scientists, and designers, we create shoes that deliver unparalleled comfort, support, and performance. Athletaro is dedicated to helping athletes unleash their inner champions and achieve their highest level of success.
+            </p>
+
+            <p class="section__text text-muted fst-italic">
+                Integrity, excellence, and authenticity are the cornerstones of our brand. We are committed to producing high-quality athletic footwear that athletes can trust and rely on. Each pair of Athletaro shoes is crafted with meticulous attention to detail, utilizing premium materials and advanced technologies to ensure durability and comfort. We are also deeply committed to sustainability, implementing eco-friendly practices throughout our manufacturing process to minimize our environmental impact. At Athletaro, we believe in the power of unity and collaboration, fostering a vibrant community where athletes can connect, inspire, and support one another on their athletic journeys.
+            </p>
+        </div>
+    </section>
+    
+    <section class="section section--bg-image image-4">
+        <h1 class="section__title display-1 text-capitalize bg-success bg-gradient text-white rounded-2 p-3"><i class="bi bi-tools pe-2"></i>Under construction</h1>
+        <!-- testimonial and cta caurosel to be added  -->
+    </section>
+</main>
+
+
+   
+
+   <!-- JavaScript for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

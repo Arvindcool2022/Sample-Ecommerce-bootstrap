@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Help</title>
+</head>
+<body>
+
+    <!-- navigation -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-md">
+                <a href="index.html" class="navbrand">
+                    <img class="img-fluid logo" src="favicon_io/favicon-32x32.png" alt="Athletaro logo"> Athletaro
+                </a>
+                <button class="navbar-toggler toggler--hover" type="button" data-bs-toggle="collapse" data-bs-target="#navigationContent" aria-controls="navigationContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </span>
+                </button>
+
+                <div class=" collapse navbar-collapse text-center justify-content-end" id="navigationContent">
+                    <ul class="navbar-nav gap-1">
+                        <li class="nav-item"><a href="index.html" class="nav-link text-capitalize"><i class="bi bi-house-door"></i> home</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link text-capitalize"><i class="bi bi-amd"></i> products</a></li>
+                        <li class="nav-item"><a href="storelist.html" class="nav-link text-capitalize"><i class="bi bi-shop"></i> Find a store</a></li>
+                        <li class="nav-item"><a href="faq.html" class="nav-link active text-capitalize"><i class="bi bi-info-circle"></i> FAQ </a></li>
+                        <div class="mb-3"></div>
+                        <li class="nav-item ms-lg-5">
+                            <button type="button" class="text-capitalize text-white-50 btn btn--sign-in btn-outline-secondary pb-md-2" data-bs-toggle="modal" data-bs-target="#log-in">
+                                <i class="bi bi-person"></i> sign in
+                            </button>
+                        </li>
+                        <div class="mb-2"></div>
+
+                        <li class="nav-item ms-lg-2">
+                            <button type="button" class="text-capitalize btn btn-outline-success pb-md-2"  data-bs-toggle="modal" data-bs-target="#join-us">
+                                <i class="bi bi-person-add"></i> join us
+                            </button>
+                        </li>
+                        <div class="mb-3"></div>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+      <!-- Modal -->
+      <div class="modal fade" id="log-in" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="log-in" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content  text-bg-dark">
+            <div class="modal-body">
+                <h1 class="modal-title float-start" id="staticBackdropLabel">Log in</h1>
+                <button type="button" class="btn-close btn-close-white float-end mt-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="clearfix"></div>
+    
+                <form action="\" method="post">
+    
+                        <label for="email" class="form-label mt-3 ">Email</label>
+                        <div class="input-group">
+                            <i class="bi bi-envelope-at-fill input-group-text"></i>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com">
+                        </div>
+                       
+                        <label for="password" class="form-label mt-3 ">Password</label>
+                        <div class="input-group">
+                            <i class="bi bi-key-fill input-group-text "></i>
+                            <input type="password" name="password" id="password" class="form-control" placeholder="">
+                        </div>
+                    
+                </form>
+                <a href="#" class="link-offset-1-hover link-opacity-75-hover">Forgot the password</a>
+    
+                <button type="button" class="mx-auto mt-3 btn btn-success d-block w-100">Sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- "Join us" Modal -->
+       <div class="modal fade" id="join-us" tabindex="-1" aria-labelledby="join-us" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content text-bg-danger">
+            <div class="modal-body">
+                <button type="button" class="btn-close btn-close-white float-end mt-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="display-1 text-capitalize"><i class="bi bi-tools pe-2"></i>Under construction</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb p-5">
+          <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-door-fill pe-1"></i>Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><i class="bi bi-info-circle pe-1"></i>FAQ</li>
+        </ol>
+      </nav>
+
+    <!-- page content -->
+
+    <section class="container-md mt-3 mb-5">
+        <h1 class="display-6 text-center my-4">Frequently Asked Questions (FAQ)</h1>
+        <button class="btn btn-outline-dark btn-sm collapsed float-end  mb-3" type="button" data-bs-toggle="collapse" data-bs-target=".accordion-collapse" aria-expanded="false">Expand/Close All</button>
+
+        <section class="accordion accordion-flush" id="#faqAccordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false">1. What is your return policy?</button></h2>
+                <div class="accordion-collapse collapse" id="faq1" data-parent="#faqAccordion">
+                    <p class="accordion-body">We offer a hassle-free return policy within 30 days of purchase. The shoes must be in their original condition, unworn, and with all the original packaging. Please refer to our Returns and Exchanges page for detailed instructions.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header focus-ring"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">2. How can I determine the right shoe size for me?</button></h2>
+                <div class="accordion-collapse collapse" id="faq2" data-parent="#faqAccordion">
+                    <p class="accordion-body">To find the perfect fit, we recommend using our shoe size chart available on our website. It provides accurate measurements to help you select the right size. Additionally, you can refer to our fitting guide for tips on measuring your feet for an optimal fit.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header focus-ring"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">3. Do you offer international shipping?</button></h2>
+                <div class="accordion-collapse collapse" id="faq3" data-parent="#faqAccordion">
+                    <p class="accordion-body">Yes, we offer international shipping to many countries. During the checkout process, you can select your country from the available options. Please note that additional customs fees and import duties may apply, which are the responsibility of the customer.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header focus-ring"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false">4. Are your shoes made with sustainable materials?</button></h2>
+                <div class="accordion-collapse collapse" id="faq4" data-parent="#faqAccordion">
+                    <p class="accordion-body">We are committed to sustainability, and many of our shoe models are made with eco-friendly materials. Check the product descriptions on our website for information on the materials used. We strive to minimize our environmental impact while maintaining high-quality standards.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header focus-ring"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false">5. How can I care for and clean my shoes?</button></h2>
+                <div class="accordion-collapse collapse" id="faq5" data-parent="#faqAccordion">
+                    <p class="accordion-body">Proper care ensures the longevity of your shoes. We recommend following the care instructions specific to each shoe model, as provided on our website or included with your purchase. Generally, most shoes can be cleaned with a soft cloth or brush and mild detergent. Avoid using harsh chemicals or machine washing unless explicitly stated.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header focus-ring"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false">6. Can I track my order?</button></h2>
+                <div class="accordion-collapse collapse" id="faq6" data-parent="#faqAccordion">
+                    <p class="accordion-body">Yes, once your order is processed and shipped, you will receive a confirmation email with a tracking number. You can use this number to track the progress of your shipment on our website or the shipping carrier's website.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header focus-ring"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false">7. What payment methods do you accept?</button></h2>
+                <div class="accordion-collapse collapse" id="faq7" data-parent="#faqAccordion">
+                    <p class="accordion-body">We accept various payment methods, including major credit cards (Visa, MasterCard, American Express), PayPal, and Apple Pay. During the checkout process, you can choose the option that suits you best.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header focus-ring"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false">8. Do you offer any discounts or promotions?</button></h2>
+                <div class="accordion-collapse collapse" id="faq8" data-parent="#faqAccordion">
+                    <p class="accordion-body">We occasionally offer discounts and promotions. Stay updated by subscribing to our newsletter or following us on social media platforms. Keep an eye out for special sales events, holiday promotions, or exclusive offers.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header focus-ring"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false">9. Can I cancel or modify my order after it has been placed?</button></h2>
+                <div class="accordion-collapse collapse" id="faq9" data-parent="#faqAccordion">
+                    <p class="accordion-body">We strive to process orders promptly; however, if you need to cancel or modify your order, please contact our customer support as soon as possible. We will do our best to accommodate your request, but we cannot guarantee changes if the order has already been shipped.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header focus-ring"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10" aria-expanded="false">10. How can I contact customer support?</button></h2>
+                <div class="accordion-collapse collapse" id="faq10" data-parent="#faqAccordion">
+                    <p class="accordion-body">You can reach our customer support team by pressing the button below. We are available during business hours to assist you with any inquiries or concerns you may have.</p>
+                </div>
+            </div>
+            
+        </section>
+    </section>
+
+   
+
+   <!-- JavaScript for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
