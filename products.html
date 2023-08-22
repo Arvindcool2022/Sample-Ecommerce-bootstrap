@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
     <title>Products</title>
 </head>
+
 <body>
 
     <!-- navigation -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-md">
-                
-                <a href="index.html" class="navbrand">
-                    <img class="img-fluid logo" src="favicon_io/favicon-32x32.png" alt="Athletaro logo"> Athletaro
+
+                <a href="index.html" class="navbrand text-uppercase">
+                    <img class="img-fluid logo" src="favicon_io/favicon-32x32.png" alt="Athletaro logo">
+                    <span data-animation-random>Athletaro</span>
                 </a>
-                <button class="navbar-toggler toggler--hover" type="button" data-bs-toggle="collapse" data-bs-target="#navigationContent" aria-controls="navigationContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler toggler--hover" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navigationContent" aria-controls="navigationContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span>
                         <i class="bi bi-three-dots-vertical"></i>
                     </span>
@@ -30,19 +37,26 @@
 
                 <div class=" collapse navbar-collapse text-center justify-content-end" id="navigationContent">
                     <ul class="navbar-nav gap-1">
-                        <li class="nav-item"><a href="index.html" class="nav-link text-capitalize"><i class="bi bi-house-door"></i> home</a></li>
-                        <li class="nav-item"><a href="products.html" class="nav-link active text-capitalize"><i class="bi bi-amd"></i> products</a></li>
-                        <li class="nav-item"><a href="storelist.html" class="nav-link text-capitalize"><i class="bi bi-shop"></i> Find a store</a></li>
-                        <li class="nav-item"><a href="faq.html" class="nav-link text-capitalize"><i class="bi bi-info-circle"></i> FAQ </a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link text-capitalize"><i
+                                    class="bi bi-house-door"></i> home</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link active text-capitalize"><i
+                                    class="bi bi-amd"></i> products</a></li>
+                        <li class="nav-item"><a href="storelist.html" class="nav-link text-capitalize"><i
+                                    class="bi bi-shop"></i> Find a store</a></li>
+                        <li class="nav-item"><a href="faq.html" class="nav-link text-capitalize"><i
+                                    class="bi bi-info-circle"></i> FAQ </a></li>
                         <div class="mb-3"></div>
                         <li class="nav-item ms-lg-5">
-                            <button type="button" class="text-capitalize text-white-50 btn btn--sign-in btn-outline-secondary pb-md-2" data-bs-toggle="modal" data-bs-target="#log-in">
+                            <button type="button"
+                                class="text-capitalize text-white-50 btn btn--sign-in btn-outline-secondary pb-md-2"
+                                data-bs-toggle="modal" data-bs-target="#log-in">
                                 <i class="bi bi-person"></i> sign in
                             </button>
                         </li>
                         <div class="mb-2"></div>
 
-                        <button type="button" class="text-capitalize btn btn-outline-success pb-md-2"  data-bs-toggle="modal" data-bs-target="#join-us">
+                        <button type="button" class="text-capitalize btn btn-outline-success pb-md-2"
+                            data-bs-toggle="modal" data-bs-target="#join-us">
                             <i class="bi bi-person-add"></i> join us
                         </button>
                         </li>
@@ -54,63 +68,68 @@
         </nav>
     </header>
 
-      <!-- Modal -->
-      <div class="modal fade" id="log-in" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="log-in" aria-hidden="true">
+    <!-- Modal -->
+    <div class="modal fade" id="log-in" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="log-in" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content  text-bg-dark">
-            <div class="modal-body">
-                <h1 class="modal-title float-start" id="staticBackdropLabel">Log in</h1>
-                <button type="button" class="btn-close btn-close-white float-end mt-2" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="clearfix"></div>
-    
-                <form action="\" method="post">
-    
+            <div class="modal-content  text-bg-dark">
+                <div class="modal-body">
+                    <h1 class="modal-title float-start" id="staticBackdropLabel">Log in</h1>
+                    <button type="button" class="btn-close btn-close-white float-end mt-2" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="clearfix"></div>
+
+                    <form action="\" method="post">
+
                         <label for="email" class="form-label mt-3 ">Email</label>
                         <div class="input-group">
                             <i class="bi bi-envelope-at-fill input-group-text"></i>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com">
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="name@example.com">
                         </div>
-                       
+
                         <label for="password" class="form-label mt-3 ">Password</label>
                         <div class="input-group">
                             <i class="bi bi-key-fill input-group-text "></i>
                             <input type="password" name="password" id="password" class="form-control" placeholder="">
                         </div>
-                    
-                </form>
-                <a href="#" class="link-offset-1-hover link-opacity-75-hover">Forgot the password</a>
-    
-                <button type="button" class="mx-auto mt-3 btn btn-success d-block w-100">Sign in</button>
-            </div>
-          </div>
-        </div>
-      </div>
 
-       <!-- "Join us" Modal -->
-       <div class="modal fade" id="join-us" tabindex="-1" aria-labelledby="join-us" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content text-bg-danger">
-            <div class="modal-body">
-                <button type="button" class="btn-close btn-close-white float-end mt-2" data-bs-dismiss="modal" aria-label="Close"></button>
-                <h1 class="display-1 text-capitalize"><i class="bi bi-tools pe-2"></i>Under construction</h1>
+                    </form>
+                    <a href="#" class="link-offset-1-hover link-opacity-75-hover">Forgot the password</a>
+
+                    <button type="button" class="mx-auto mt-3 btn btn-success d-block w-100">Sign in</button>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+
+    <!-- "Join us" Modal -->
+    <div class="modal fade" id="join-us" tabindex="-1" aria-labelledby="join-us" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-bg-danger">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-white float-end mt-2" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <h1 class="display-1 text-capitalize"><i class="bi bi-tools pe-2"></i>Under construction</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Breadcrumbs -->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb p-5">
-          <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-door-fill pe-1"></i>Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page"><i class="bi bi-amd pe-1"></i>Products</li>
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-door-fill pe-1"></i>Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><i class="bi bi-amd pe-1"></i>Products</li>
         </ol>
-    </nav>      
+    </nav>
 
-      <!-- page content -->
+    <!-- page content -->
 
     <section class="container-sm mt-3 mb-5">
         <aside class="alert alert-danger alert-dismissible fade show" role="alert">
-            <p>We are currently facing problem accepting payment through <strong>UPI</strong> kindly use other payment methods while checking out</p>
+            <p>We are currently facing problem accepting payment through <strong>UPI</strong> kindly use other payment
+                methods while checking out</p>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </aside>
         <h1 class="display-6 mb-4 text-center">Products</h1>
@@ -119,88 +138,104 @@
 
             <div class="col">
                 <div class="card shadow">
-                    <img src="https://images.pexels.com/photos/9986256/pexels-photo-9986256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="card-img-top">
+                    <img src="https://images.pexels.com/photos/9986256/pexels-photo-9986256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title text-capitalize">air jordan</h3>
-                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dignissimos?</p>
-                        <a href="#" class="btn btn-outline-dark">Buy Now</a>
+                            <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsum, dignissimos?</p>
+                            <a href="#" class="btn btn-outline-dark">Buy Now</a>
                     </div>
                 </div>
             </div>
 
             <div class="col">
                 <div class="card shadow">
-                    <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg" alt="" class="card-img-top">
+                    <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg" alt=""
+                        class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title text-capitalize">air killshot</h3>
-                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dignissimos?</p>
-                        <a href="#" class="btn btn-outline-dark">Buy Now</a>
+                            <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsum, dignissimos?</p>
+                            <a href="#" class="btn btn-outline-dark">Buy Now</a>
                     </div>
                 </div>
             </div>
 
             <div class="col">
                 <div class="card shadow">
-                    <img src="https://images.pexels.com/photos/9546375/pexels-photo-9546375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="card-img-top">
+                    <img src="https://images.pexels.com/photos/9546375/pexels-photo-9546375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title text-capitalize">air max plus III</h3>
-                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dignissimos?</p>
-                        <a href="#" class="btn btn-outline-dark">Buy Now</a>
+                            <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsum, dignissimos?</p>
+                            <a href="#" class="btn btn-outline-dark">Buy Now</a>
                     </div>
                 </div>
             </div>
 
             <div class="col">
                 <div class="card shadow">
-                    <img src="https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="card-img-top">
+                    <img src="https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title text-capitalize">air zoom lite</h3>
-                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dignissimos?</p>
-                        <a href="#" class="btn btn-outline-dark">Buy Now</a>
+                            <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsum, dignissimos?</p>
+                            <a href="#" class="btn btn-outline-dark">Buy Now</a>
                     </div>
                 </div>
             </div>
 
             <div class="col">
                 <div class="card shadow">
-                    <img src="https://images.pexels.com/photos/1456705/pexels-photo-1456705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="card-img-top">
+                    <img src="https://images.pexels.com/photos/1456705/pexels-photo-1456705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title text-capitalize">nike invincible 3</h3>
-                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dignissimos?</p>
-                        <a href="#" class="btn btn-outline-dark">Buy Now</a>
+                            <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsum, dignissimos?</p>
+                            <a href="#" class="btn btn-outline-dark">Buy Now</a>
                     </div>
                 </div>
             </div>
 
             <div class="col">
                 <div class="card shadow">
-                    <img src="https://images.pexels.com/photos/1456733/pexels-photo-1456733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <img
+                        src="https://images.pexels.com/photos/1456733/pexels-photo-1456733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
                     <div class="card-body">
                         <h5 class="card-title text-capitalize">nike revolution 6</h3>
-                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dignissimos?</p>
-                        <a href="#" class="btn btn-outline-dark">Buy Now</a>
+                            <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsum, dignissimos?</p>
+                            <a href="#" class="btn btn-outline-dark">Buy Now</a>
                     </div>
                 </div>
             </div>
 
             <div class="col">
                 <div class="card shadow">
-                    <img src="https://images.pexels.com/photos/1456740/pexels-photo-1456740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 alt="" class="card-img-top">
+                    <img src="https://images.pexels.com/photos/1456740/pexels-photo-1456740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 alt="" class="
+                        card-img-top">
                     <div class="card-body">
                         <h5 class="card-title text-capitalize">nike pegasus</h3>
-                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dignissimos?</p>
-                        <a href="#" class="btn btn-outline-dark">Buy Now</a>
+                            <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsum, dignissimos?</p>
+                            <a href="#" class="btn btn-outline-dark">Buy Now</a>
                     </div>
                 </div>
             </div>
 
             <div class="col">
                 <div class="card shadow">
-                    <img src="https://images.pexels.com/photos/1456731/pexels-photo-1456731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="card-img-top">
+                    <img src="https://images.pexels.com/photos/1456731/pexels-photo-1456731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title text-capitalize">nike renew ride</h3>
-                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dignissimos?</p>
-                        <a href="#" class="btn btn-outline-dark">Buy Now</a>
+                            <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsum, dignissimos?</p>
+                            <a href="#" class="btn btn-outline-dark">Buy Now</a>
                     </div>
                 </div>
             </div>
@@ -210,10 +245,11 @@
     </section>
 
 
-   
 
-   <!-- JavaScript for bootstrap -->
+
+    <!-- JavaScript for bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

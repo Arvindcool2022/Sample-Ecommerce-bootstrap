@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
     <title>Locations</title>
 </head>
+
 <body>
 
     <!-- navigation -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-md">
-                <a href="index.html" class="navbrand">
-                    <img class="img-fluid logo" src="favicon_io/favicon-32x32.png" alt="Athletaro logo"> Athletaro
+                <a href="index.html" class="navbrand text-uppercase">
+                    <img class="img-fluid logo" src="favicon_io/favicon-32x32.png" alt="Athletaro logo">
+                    <span data-animation-random>Athletaro</span>
                 </a>
-                <button class="navbar-toggler toggler--hover" type="button" data-bs-toggle="collapse" data-bs-target="#navigationContent" aria-controls="navigationContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler toggler--hover" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navigationContent" aria-controls="navigationContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span>
                         <i class="bi bi-three-dots-vertical"></i>
                     </span>
@@ -29,19 +36,26 @@
 
                 <div class=" collapse navbar-collapse text-center justify-content-end" id="navigationContent">
                     <ul class="navbar-nav gap-1">
-                        <li class="nav-item"><a href="index.html" class="nav-link text-capitalize"><i class="bi bi-house-door"></i> home</a></li>
-                        <li class="nav-item"><a href="products.html" class="nav-link text-capitalize"><i class="bi bi-amd"></i> products</a></li>
-                        <li class="nav-item"><a href="storelist.html" class="nav-link active text-capitalize"><i class="bi bi-shop"></i> Find a store</a></li>
-                        <li class="nav-item"><a href="faq.html" class="nav-link text-capitalize"><i class="bi bi-info-circle"></i> FAQ </a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link text-capitalize"><i
+                                    class="bi bi-house-door"></i> home</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link text-capitalize"><i
+                                    class="bi bi-amd"></i> products</a></li>
+                        <li class="nav-item"><a href="storelist.html" class="nav-link active text-capitalize"><i
+                                    class="bi bi-shop"></i> Find a store</a></li>
+                        <li class="nav-item"><a href="faq.html" class="nav-link text-capitalize"><i
+                                    class="bi bi-info-circle"></i> FAQ </a></li>
                         <div class="mb-3"></div>
                         <li class="nav-item ms-lg-5">
-                            <button type="button" class="text-capitalize text-white-50 btn btn--sign-in btn-outline-secondary pb-md-2" data-bs-toggle="modal" data-bs-target="#log-in">
+                            <button type="button"
+                                class="text-capitalize text-white-50 btn btn--sign-in btn-outline-secondary pb-md-2"
+                                data-bs-toggle="modal" data-bs-target="#log-in">
                                 <i class="bi bi-person"></i> sign in
                             </button>
                         </li>
                         <div class="mb-2"></div>
 
-                        <button type="button" class="text-capitalize btn btn-outline-success pb-md-2"  data-bs-toggle="modal" data-bs-target="#join-us">
+                        <button type="button" class="text-capitalize btn btn-outline-success pb-md-2"
+                            data-bs-toggle="modal" data-bs-target="#join-us">
                             <i class="bi bi-person-add"></i> join us
                         </button>
                         </li>
@@ -53,59 +67,63 @@
         </nav>
     </header>
 
-      <!-- Modal -->
-      <div class="modal fade" id="log-in" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="log-in" aria-hidden="true">
+    <!-- Modal -->
+    <div class="modal fade" id="log-in" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="log-in" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content  text-bg-dark">
-            <div class="modal-body">
-                <h1 class="modal-title float-start" id="staticBackdropLabel">Log in</h1>
-                <button type="button" class="btn-close btn-close-white float-end mt-2" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="clearfix"></div>
-    
-                <form action="\" method="post">
-    
+            <div class="modal-content  text-bg-dark">
+                <div class="modal-body">
+                    <h1 class="modal-title float-start" id="staticBackdropLabel">Log in</h1>
+                    <button type="button" class="btn-close btn-close-white float-end mt-2" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="clearfix"></div>
+
+                    <form action="\" method="post">
+
                         <label for="email" class="form-label mt-3 ">Email</label>
                         <div class="input-group">
                             <i class="bi bi-envelope-at-fill input-group-text"></i>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com">
+                            <input type="email" name="email" id="email" class="form-control"
+                                placeholder="name@example.com">
                         </div>
-                       
+
                         <label for="password" class="form-label mt-3 ">Password</label>
                         <div class="input-group">
                             <i class="bi bi-key-fill input-group-text "></i>
                             <input type="password" name="password" id="password" class="form-control" placeholder="">
                         </div>
-                    
-                </form>
-                <a href="#" class="link-offset-1-hover link-opacity-75-hover">Forgot the password</a>
-    
-                <button type="button" class="mx-auto mt-3 btn btn-success d-block w-100">Sign in</button>
-            </div>
-          </div>
-        </div>
-      </div>
 
-       <!-- "Join us" Modal -->
-       <div class="modal fade" id="join-us" tabindex="-1" aria-labelledby="join-us" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content text-bg-danger">
-            <div class="modal-body">
-                <button type="button" class="btn-close btn-close-white float-end mt-2" data-bs-dismiss="modal" aria-label="Close"></button>
-                <h1 class="display-1 text-capitalize"><i class="bi bi-tools pe-2"></i>Under construction</h1>
+                    </form>
+                    <a href="#" class="link-offset-1-hover link-opacity-75-hover">Forgot the password</a>
+
+                    <button type="button" class="mx-auto mt-3 btn btn-success d-block w-100">Sign in</button>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+
+    <!-- "Join us" Modal -->
+    <div class="modal fade" id="join-us" tabindex="-1" aria-labelledby="join-us" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-bg-danger">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-white float-end mt-2" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <h1 class="display-1 text-capitalize"><i class="bi bi-tools pe-2"></i>Under construction</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Breadcrumbs -->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb p-5">
-          <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-door-fill pe-1"></i>Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page"><i class="bi bi-shop pe-1"></i>Find a store</li>
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-door-fill pe-1"></i>Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><i class="bi bi-shop pe-1"></i>Find a store</li>
         </ol>
-    </nav>   
+    </nav>
 
-<!-- page content -->
+    <!-- page content -->
 
     <main class="container-sm  mt-3 mb-5">
         <h1 class="display-6 text-center my-3">Find a Athletaro Store</h1>
@@ -115,12 +133,14 @@
             <div class="col">
                 <div class="card shadow h-100">
                     <div class="row row-cols-1 row-cols-md-2 ">
-                        <img src="https://images.pexels.com/photos/4483775/pexels-photo-4483775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
+                        <img src="https://images.pexels.com/photos/4483775/pexels-photo-4483775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
                         <div class="card-body ps-4 pe-4">
                             <h3 class="card-title">Athletaro Central Plaza</h3>
                             <p class="badge rounded-pill text-bg-info">Retail</p>
                             <p class="badge rounded-pill text-bg-warning">Wholesale</p>
-                            <p class="card-text">123 Victory Avenue, Suite 501, Cityville, State XZ1234, United States.</p>
+                            <p class="card-text">123 Victory Avenue, Suite 501, Cityville, State XZ1234, United States.
+                            </p>
                             <small class="card-text text-muted">
                                 <span class="text-success me-2">Open.</span>
                                 Closes at 10:00pm
@@ -134,11 +154,13 @@
             <div class="col">
                 <div class="card shadow h-100">
                     <div class="row row-cols-1 row-cols-lg-2">
-                        <img src="https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
+                        <img src="https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
                         <div class="card-body ps-4 pe-4">
                             <h3 class="card-title">Athletaro Sports Emporium</h3>
                             <p class="badge rounded-pill text-bg-info">Retail</p>
-                            <p class="card-text">456 Champion Street, Floor 2, Unit B, Townsville, State YZ5678, United States.</p>
+                            <p class="card-text">456 Champion Street, Floor 2, Unit B, Townsville, State YZ5678, United
+                                States.</p>
                             <small class="card-text text-muted">
                                 <span class="text-danger me-2">Closed.</span>
                                 Opens at 10:00am.
@@ -153,11 +175,13 @@
             <div class="col">
                 <div class="card shadow h-100">
                     <div class="row row-cols-1 row-cols-lg-2">
-                        <img src="https://images.pexels.com/photos/3360545/pexels-photo-3360545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
+                        <img src="https://images.pexels.com/photos/3360545/pexels-photo-3360545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
                         <div class="card-body ps-4 pe-4">
                             <h3 class="card-title">Athletaro Athletic Outfitters</h3>
                             <p class="badge rounded-pill text-bg-info">Retail</p>
-                            <p class="card-text"> 789 Sprint Avenue, Shop 12, Fitness Plaza, Fitnesstown, State AB9012, United States.</p>
+                            <p class="card-text"> 789 Sprint Avenue, Shop 12, Fitness Plaza, Fitnesstown, State AB9012,
+                                United States.</p>
                             <small class="card-text text-muted">
                                 <span class="text-success me-2">Open</span>
                                 Closes at 10:00pm.
@@ -166,18 +190,20 @@
                     </div>
                 </div>
             </div>
-            
+
 
             <!-- card-4 -->
             <div class="col">
                 <div class="card shadow h-100">
                     <div class="row row-cols-1 row-cols-lg-2">
-                        <img src="https://images.pexels.com/photos/4483775/pexels-photo-4483775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
+                        <img src="https://images.pexels.com/photos/4483775/pexels-photo-4483775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
                         <div class="card-body ps-4 pe-4">
                             <h3 class="card-title">Athletaro Active Plaza</h3>
                             <p class="badge rounded-pill text-bg-info">Retail</p>
                             <p class="badge rounded-pill text-bg-warning">Wholesale</p>
-                            <p class="card-text">321 Stamina Road, Building C, Level 3, Endurance City, State CD3456, United States.</p>
+                            <p class="card-text">321 Stamina Road, Building C, Level 3, Endurance City, State CD3456,
+                                United States.</p>
                             <small class="card-text text-muted">
                                 <span class="text-success me-2">Open.</span>
                                 Closes at 10:00pm.
@@ -191,11 +217,13 @@
             <div class="col">
                 <div class="card shadow h-100">
                     <div class="row row-cols-1 row-cols-lg-2">
-                        <img src="https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
+                        <img src="https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
                         <div class="card-body ps-4 pe-4">
                             <h3 class="card-title">Athletaro Performance Hub</h3>
                             <p class="badge rounded-pill text-bg-info">Retail</p>
-                            <p class="card-text">567 Power Drive, Suite 200, Energypark, State EF7890, United States.</p>
+                            <p class="card-text">567 Power Drive, Suite 200, Energypark, State EF7890, United States.
+                            </p>
                             <small class="card-text text-muted">
                                 <span class="text-success me-2">Open.</span>
                                 Closes at 10:00pm.
@@ -210,11 +238,13 @@
             <div class="col">
                 <div class="card shadow h-100">
                     <div class="row row-cols-1 row-cols-lg-2">
-                        <img src="https://images.pexels.com/photos/5698853/pexels-photo-5698853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
+                        <img src="https://images.pexels.com/photos/5698853/pexels-photo-5698853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
                         <div class="card-body ps-4 pe-4">
                             <h3 class="card-title">Athletaro Fitness Mall</h3>
                             <p class="badge rounded-pill text-bg-info">Retail</p>
-                            <p class="card-text">890 Agility Street, Shop 45, Health Arcade, Flexville, State GH1234, United States.</p>
+                            <p class="card-text">890 Agility Street, Shop 45, Health Arcade, Flexville, State GH1234,
+                                United States.</p>
                             <small class="card-text text-muted">
                                 <span class="text-success me-2">Open</span>
                                 Closes at 10:00pm.
@@ -229,11 +259,13 @@
             <div class="col">
                 <div class="card shadow h-100">
                     <div class="row row-cols-1 row-cols-lg-2">
-                        <img src="https://images.pexels.com/photos/3360545/pexels-photo-3360545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
+                        <img src="https://images.pexels.com/photos/3360545/pexels-photo-3360545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
                         <div class="card-body ps-4 pe-4">
                             <h3 class="card-title">Athletaro Sports Corner</h3>
                             <p class="badge rounded-pill text-bg-info">Retail</p>
-                            <p class="card-text">234 Speed Lane, First Floor, Unit 8, Quicktown, State IJ5678, United States.</p>
+                            <p class="card-text">234 Speed Lane, First Floor, Unit 8, Quicktown, State IJ5678, United
+                                States.</p>
                             <small class="card-text text-muted">
                                 <span class="text-success me-2">Open.</span>
                                 Closes at 10:00pm.
@@ -248,11 +280,13 @@
             <div class="col">
                 <div class="card shadow h-100">
                     <div class="row row-cols-1 row-cols-lg-2">
-                        <img src="https://images.pexels.com/photos/5698853/pexels-photo-5698853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
+                        <img src="https://images.pexels.com/photos/5698853/pexels-photo-5698853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="a shoe shop" class="img-fluid rounded-3 object-fit-cover">
                         <div class="card-body ps-4 pe-4">
                             <h3 class="card-title">Athletaro Athlete's Haven</h3>
                             <p class="badge rounded-pill text-bg-info">Retail</p>
-                            <p class="card-text">901 Endurance Boulevard, Suite 101, Strengthville, State KL9012, United States.</p>
+                            <p class="card-text">901 Endurance Boulevard, Suite 101, Strengthville, State KL9012, United
+                                States.</p>
                             <small class="card-text text-muted">
                                 <span class="text-danger me-2"> Closed.</span>
                                 Opens at 10:00am.
@@ -263,18 +297,19 @@
             </div>
 
 
-          
+
         </section>
 
 
-        
+
     </main>
 
 
-   
 
-   <!-- JavaScript for bootstrap -->
+
+    <!-- JavaScript for bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
